@@ -31,7 +31,7 @@ return array(
             'imprint' => array(
                 'type'    => 'Literal',
                 'options' => array(
-                    'route'    => '/impressum',
+                    'route'    => '/imprint',
                     'defaults' => array(
                         'controller' => 'about',
                         'action'     => 'imprint',
