@@ -16,33 +16,33 @@
  * @package    Application
  */
 
-$this->headTitle('Seite nicht gefunden');
-$this->pageTitle('Seite nicht gefunden');
+$this->headTitle('Page not found ');
+$this->pageTitle('Page not found ');
 ?>
 <div class="hero-unit">
-    <h1>Die Seite konnte nicht gefunden werden!</h1>
+    <h1>The Page could not be found!</h1>
 </div>
-<p class="pull-center"><a href="/" class="btn">Zur Startseite</a></p>
+<p class="pull-center"><a href="/" class="btn">To home page</a></p>
 <hr/>
 <div class="alert alert-error">
-    <h2>Die aufgerufene Seite wurde nicht gefunden.</h2>
+    <h2>The requested page could not be found.</h2>
     <?php
     if (isset($this->reason) && $this->reason) {
         switch ($this->reason) {
             case 'error-controller-cannot-dispatch':
-                $reasonMessage = 'Der angeforderte Controller war nicht in der Lage die Anfrage zu verarbeiten.';
+                $reasonMessage = 'The requested controller was unable to process the request in a position.';
                 break;
             case 'error-controller-not-found':
-                $reasonMessage = 'Der angeforderte Controller konnte keiner Controller Klasse zugeordnet werden.';
+                $reasonMessage = 'The requested controller could be assigned to any controller class.';
                 break;
             case 'error-controller-invalid':
-                $reasonMessage = 'Der angeforderte Controller ist nicht aufrufbar.';
+                $reasonMessage = 'The requested controller is not accessible.';
                 break;
             case 'error-router-no-match':
-                $reasonMessage = 'Für die angeforderte URL konnte keine Übereinstimmung gefunden werden.';
+                $reasonMessage = 'The requested URL is no match could be found.';
                 break;
             default:
-                $reasonMessage = 'Zu diesem Zeitpunkt ist es uns nicht möglich zu bestimmen, warum ein 404 Fehler aufgetreten ist.';
+                $reasonMessage = 'At this time it is not possible to determine us, why a 404 error.';
                 break;
         }
 
@@ -52,7 +52,7 @@ $this->pageTitle('Seite nicht gefunden');
 </div>
 
 <div class="well">
-    <h3>Weitere Informationen</h3>
+    <h3>Further information</h3>
     <table class="table">
         <?php if (isset($this->controller) && $this->controller): ?>
             <tr>
