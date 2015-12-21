@@ -90,8 +90,6 @@ class CustomerTableDatabaseTest extends PHPUnit_Extensions_Database_TestCase
         $hydrator = new CustomerHydrator();
 
         foreach ($customerList as $key => $customerEntity) {
-echo $key;
-            var_dump($customerEntity);
             $expectedRow = $queryTable->getRow($key);
             $customerRow = $hydrator->extract($customerEntity);
 
