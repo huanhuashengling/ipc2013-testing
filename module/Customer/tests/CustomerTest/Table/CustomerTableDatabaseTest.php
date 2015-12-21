@@ -52,8 +52,8 @@ class CustomerTableDatabaseTest extends PHPUnit_Extensions_Database_TestCase
             $dbConfig = array(
                 'driver' => 'pdo',
                 'dsn'    => 'mysql:dbname=ipc2013.testing.test;host=localhost;charset=utf8',
-                'user'   => 'ipc2013',
-                'pass'   => 'ipc2013',
+                'user'   => 'root',
+                'pass'   => 'admin',
             );
 
             $this->adapter = new Adapter($dbConfig);
@@ -90,6 +90,8 @@ class CustomerTableDatabaseTest extends PHPUnit_Extensions_Database_TestCase
         $hydrator = new CustomerHydrator();
 
         foreach ($customerList as $key => $customerEntity) {
+echo $key;
+            var_dump($customerEntity);
             $expectedRow = $queryTable->getRow($key);
             $customerRow = $hydrator->extract($customerEntity);
 
