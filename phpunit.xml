@@ -5,4 +5,17 @@
             <directory>./module/Customer/tests/CustomerTest</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory>./module/Application/</directory>
+            <directory>./module/Customer/</directory>
+        </whitelist>
+        <blacklist>
+            <directory suffix=".php">./vendor</directory>
+            <directory suffix=".php">./config</directory>
+            <file>./module/Application/Module.php</file>
+            <file>./module/Customer/Module.php</file>
+            <file>./module/Customer/tests/Bootstrap.php</file>
+        </blacklist>
+    </filter>
 </phpunit>
