@@ -3,3 +3,4 @@ composer.lock
 .project
 .settings
 .idea
+vendor/*
