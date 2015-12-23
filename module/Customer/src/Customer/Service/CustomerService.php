@@ -152,7 +152,7 @@ class CustomerService
         } catch (InvalidQueryException $e) {
             return false;
         }
-
+        $id = $data["id"];
         // reload customer
         $customerEntity = $this->fetchSingleById($id);
 
