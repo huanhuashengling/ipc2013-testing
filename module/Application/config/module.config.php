@@ -31,7 +31,7 @@ return array(
             'imprint' => array(
                 'type'    => 'Literal',
                 'options' => array(
-                    'route'    => '/impressum',
+                    'route'    => '/imprint',
                     'defaults' => array(
                         'controller' => 'about',
                         'action'     => 'imprint',
@@ -78,7 +78,7 @@ return array(
     ),
 
     'session_config'  => array(
-        'save_path' => realpath(APPLICATION_ROOT . '/data/session'),
+        // 'save_path' => realpath(APPLICATION_ROOT . '/data/session'),
         'name'      => 'ZFS_SESSION',
     ),
 );
