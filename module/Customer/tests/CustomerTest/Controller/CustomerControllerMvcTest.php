@@ -196,7 +196,7 @@ class CustomerControllerMvcTest extends AbstractHttpControllerTestCase
         $this->assertControllerClass('IndexController');
         $this->assertMatchedRouteName('customer/action');
 
-        $this->assertContains('<form action="/customer/create"', $this->getResponse()->getContent());
+        $this->assertContains('<form action="&#x2F;customer&#x2F;create"', $this->getResponse()->getContent());
     }
 
     /**
@@ -276,7 +276,7 @@ class CustomerControllerMvcTest extends AbstractHttpControllerTestCase
         $this->assertControllerClass('IndexController');
         $this->assertMatchedRouteName('customer/action');
 
-        $this->assertContains('<form action="/customer/create"', $this->getResponse()->getContent());
+        $this->assertContains('<form action="&#x2F;customer&#x2F;create"', $this->getResponse()->getContent());
 
         foreach ($postData as $value) {
             $this->assertContains($value, $this->getResponse()->getContent());
