@@ -27,11 +27,11 @@ use Customer\Entity\CustomerEntity;
     <thead>
     <tr>
         <th>ID</th>
-        <th>Vorname</th>
-        <th>Nachname</th>
-        <th>Anschrift</th>
-        <th>Land</th>
-        <th style="text-align: right;"><a href="<?php echo $this->url('customer/action', array('action' => 'create'));?>" class="btn btn-small"><i class="icon-plus"></i> anlegen</a></th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Country</th>
+        <th style="text-align: right;"><a href="<?php echo $this->url('customer/action', array('action' => 'create'));?>" class="btn btn-small"><i class="icon-plus"></i> create</a></th>
     </tr>
     </thead>
     <tbody>
@@ -43,14 +43,14 @@ use Customer\Entity\CustomerEntity;
             <td><?php echo $customerEntity->getStreet() . ', ' . $customerEntity->getPostcode() . ' ' . $customerEntity->getCity(); ?></td>
             <td><?php echo $customerEntity->getCountry(); ?></td>
             <td style="text-align: right;">
-                <a href="<?php echo $this->url('customer/action', array('action' => 'show', 'id' => $customerEntity->getId()));?>" class="btn btn-small"><i class="icon-search"></i> anzeigen</a>
-                <a href="<?php echo $this->url('customer/action', array('action' => 'update', 'id' => $customerEntity->getId()));?>" class="btn btn-small"><i class="icon-pencil"></i> bearbeiten</a>
-                <a href="<?php echo $this->url('customer/action', array('action' => 'delete', 'id' => $customerEntity->getId()));?>" class="btn btn-small" onClick="return confirm('Sind Sie sicher?')"><i class="icon-trash"></i> löschen</a>
+                <a href="<?php echo $this->url('customer/action', array('action' => 'show', 'id' => $customerEntity->getId()));?>" class="btn btn-small"><i class="icon-search"></i> show</a>
+                <a href="<?php echo $this->url('customer/action', array('action' => 'update', 'id' => $customerEntity->getId()));?>" class="btn btn-small"><i class="icon-pencil"></i> edit</a>
+                <a href="<?php echo $this->url('customer/action', array('action' => 'delete', 'id' => $customerEntity->getId()));?>" class="btn btn-small" onClick="return confirm('Are You Sure?')"><i class="icon-trash"></i> delete</a>
             </td>
         </tr>
     <?php endforeach; ?>
     </tbody>
 </table>
 <hr />
-<a href="<?php echo $this->url('home'); ?>" class="btn btn-success">Übersicht</a>
+<a href="<?php echo $this->url('home'); ?>" class="btn btn-success">Overview</a>
 

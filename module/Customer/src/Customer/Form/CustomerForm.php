@@ -43,7 +43,7 @@ class CustomerForm extends Form
                 'type'       => 'Text',
                 'name'       => 'firstname',
                 'options'    => array(
-                    'label' => 'Vorname',
+                    'label' => 'First Name',
                 ),
                 'attributes' => array(
                     'class' => 'span5',
@@ -56,7 +56,7 @@ class CustomerForm extends Form
                 'type'       => 'Text',
                 'name'       => 'lastname',
                 'options'    => array(
-                    'label' => 'Nachname',
+                    'label' => 'Last Name',
                 ),
                 'attributes' => array(
                     'class' => 'span5',
@@ -69,7 +69,7 @@ class CustomerForm extends Form
                 'type'       => 'Text',
                 'name'       => 'street',
                 'options'    => array(
-                    'label' => 'Straße',
+                    'label' => 'Address',
                 ),
                 'attributes' => array(
                     'class' => 'span5',
@@ -82,7 +82,7 @@ class CustomerForm extends Form
                 'type'       => 'Text',
                 'name'       => 'postcode',
                 'options'    => array(
-                    'label' => 'PLZ',
+                    'label' => 'postcode',
                 ),
                 'attributes' => array(
                     'class' => 'span5',
@@ -95,7 +95,7 @@ class CustomerForm extends Form
                 'type'       => 'Text',
                 'name'       => 'city',
                 'options'    => array(
-                    'label' => 'Stadt',
+                    'label' => 'City',
                 ),
                 'attributes' => array(
                     'class' => 'span5',
@@ -108,7 +108,7 @@ class CustomerForm extends Form
                 'type'       => 'Select',
                 'name'       => 'country',
                 'options'    => array(
-                    'label'         => 'Land',
+                    'label'         => 'Country',
                     'value_options' => array(
                         'de' => 'Deutschland',
                         'at' => 'Österreich',

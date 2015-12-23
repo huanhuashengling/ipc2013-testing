@@ -32,19 +32,19 @@ $customerEntity = $this->customerEntity; /* @var $customerEntity CustomerEntity 
         <td><?php echo $customerEntity->getId(); ?></td>
     </tr>
     <tr>
-        <th>Vorname</th>
+        <th>First Name</th>
         <td><?php echo $customerEntity->getFirstname(); ?></td>
     </tr>
     <tr>
-        <th>Nachname</th>
+        <th>Last Name</th>
         <td><?php echo $customerEntity->getLastname(); ?></td>
     </tr>
     <tr>
-        <th>Anschrift</th>
+        <th>Address</th>
         <td><?php echo $customerEntity->getStreet() . ', ' . $customerEntity->getPostcode() . ' ' . $customerEntity->getCity(); ?></td>
     </tr>
     <tr>
-        <th>Land</th>
+        <th>Country</th>
         <td><?php echo $customerEntity->getCountry(); ?></td>
     </tr>
     </tbody>
